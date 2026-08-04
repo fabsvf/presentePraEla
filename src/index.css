@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-soft-bg: #ffe6f2;
+  --color-soft-card: #ffffff;
+  --color-soft-btn: #ffebf5;
+  --color-soft-text: #ff80bf;
+  --color-soft-heart: #ff3377;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
