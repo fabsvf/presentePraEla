@@ -1,23 +1,27 @@
+import { useState } from "react"
+import ChoiceButtom from './components/botao'
+
 export default function App() {
+  const [senha, changeSenha] = useState("")
   return (
-    // CONTÊINER PRINCIPAL (O "segundo background")
-    // min-h-screen: ocupa toda a altura da tela
-    // flex items-center justify-center: centraliza o conteúdo perfeitamente no meio
-    // bg-[#4a0d12]: uma cor de fundo vermelho escuro (você pode trocar depois)
     <div className="min-h-screen flex items-center justify-center bg-[#4a0d12]">
-      
-      // O CARTÃO (O fundo de papel)
-      // w-[500px] h-[350px]: definimos um tamanho fixo retangular para caber a sua imagem
-      // bg-[url('/png-imagem.png')]: puxa a imagem da pasta public
-      // bg-contain bg-center bg-no-repeat: garante que a imagem caiba inteira, centralizada e sem repetir
-      // flex flex-col items-center justify-center: para que o futuro texto e botões fiquem no meio do papel
-      <div 
-        className="w-[500px] h-[350px] bg-[url('/png-imagem.png')] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center"
-      >
-        
-        {/* Tudo que colocarmos aqui dentro depois (título, senha) vai ficar por cima do papel! */}
+      <div className="w-[1000px] h-[640px] bg-[url('/png-imagem.png')] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center">
+        <div>{senha}</div>
         <h1 className="text-xl font-bold text-gray-700">A senha vai aqui</h1>
-        
+        {/* another conteiner */}
+        <div className="">
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={"1"} onclick={(e) => changeSenha(e.target.senha + num)}/>
+          <ChoiceButtom numero={}/>
+        </div>
       </div>
       
     </div>
